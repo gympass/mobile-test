@@ -27,6 +27,8 @@ Build a Tic-Tac-Toe app using React Native with the following functionality:
 - - If the user clicks OK, a new game starts. This means the game board reverts its initial state and all claimed cells are cleared.
 - - If the user clicks CANCEL, the dialog box closes and the current game resumes.
 
+You can use this (image)[https://jcrastelli.files.wordpress.com/2013/07/tictactoe.png] as reference for your app appearance, but feel free for upgrade app style and usability, but dont forget our **features** :smile:
+
 ## Instructions
 You can fork this project or download it. When you finish this test just reply the email we sent you with the repository link.
 Thanks and good luck! :+1: 
