@@ -6,6 +6,8 @@ A standard __Tic-Tac-Toe__ game is played on a __3 × 3__ grid by 2 player
 
 ## The Project
 
+<img src="./UI.png">
+
 Build a Tic-Tac-Toe app using **React Native**, you can start with a simple `react-native init` with the following functionality:
 
 - The game ends under either of the following circumstances:
