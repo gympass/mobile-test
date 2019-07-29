@@ -1,41 +1,53 @@
-# Gympass Mobile test
+# Gympass Mobile Challenge
 
-## The game
+## The problem
 
-A standard __Tic-Tac-Toe__ game is played on a __3 × 3__ grid by 2 players named Player 1 and Player 2 (where Player 1 always moves first). During gameplay, players take alternating turns in which they claim a cell by filling it with their assigned character (i.e., O or X). Player 1 is always O and Player 2 is always X. The first character to claim 3 cells that fall in a vertical, horizontal, or diagonal line wins.
+We have an API at the address `https://gympass-test.herokuapp.com`, which exposes a gym list resource as well as a checkin one. Your job is to develop an app that offers a complete checkin experience to the end-user. 
 
-## The Project
+Feel free to create an experience that feels the most pleasant to the user.
 
-<img src="./UI.png">
+The final user must be able to:
 
-Build a Tic-Tac-Toe app using **React Native**, you can start with a simple `react-native init` with the following functionality:
+- View the gyms list;
+- View all the activities of a given gym;
+- Perform a checkin in a gym/activity.
 
-- The game ends under either of the following circumstances:
-  -  A player wins by claiming 3 cells that fall in a horizontal, vertical, or diagonal line.
-  - The players tie if there are no more possible moves (i.e., all cells are claimed).
+## Walkthrough
 
-- It must have a button at the bottom of the screen whose function is to start a new game. If no game is currently in progress, this button must be labeled Start New Game, if there is a game in progress, this button must be labeled Restart Game.
+- Use (preferentialy) react native for your application, avoiding Expo APIs usage;
+- Use a state management solution if you need to;
+- Try to use the most up to date Javascript features (ES6+);
+- Write unit tests and any other tests you find helpful or important to have;
+- Keep performance and corner cases in mind;
+- Be creative and show us what you`ve got.
 
-- When the game ends, display the result in the text box immediately above the Start New Game button.
-  - If Player 1 wins, display Player 1 Wins.
-  - If Player 2 wins, display Player 2 Wins.
-  - If the players tie, display It's a Tie.
+## The REST API
 
-- In the right corner of the top bar, display the number of games thus user finished. 
-  - This number should be kept if the user finishes the app and start it again
+The API has two endpoints:
 
-- If the user clicks on the Restart Game, a dialog box should appear with the message: Do you want to restart the game?.
-  - If the user clicks OK, a new game starts. This means the game board reverts its initial state and all claimed cells are cleared.
-  - If the user clicks CANCEL, the dialog box closes and the current game resumes.
+>- **GET** `/gyms` - returns a list of gyms with it`s activities.
 
-## Bonus Tasks
-- Redux, if you find it necessary
+>- **POST** `/checkin` - performs a checkin in a gym/activity.
+>
+>     Parameters:  
+>     - `gymId` - Integer  
+>     - `activityId` - Integer  
+
+## Bonus
+
 - Animations are welcome! 🤩
-- Code linting (ESLint)
-- Tests
+- Show gyms in some map view
 
-# Delivery
+## Delivery
+
 - **Don't** fork this project. Create a new repository in your account and send us the URL;
-- Create a readme file with the instructions to run the project and the tests, and add any comment that you think is relevant.
+- Create a README file with the instructions to run the project and the tests. Also add any comment that you think is relevant.
 
-Thanks and good luck! 🍀 
+## What will be evaluated?
+
+- Readability  
+- Maintenance  
+- Testabily
+- Libs usage (Feel free!)
+
+Thanks and good luck! 🍀
